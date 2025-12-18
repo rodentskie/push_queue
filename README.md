@@ -18,7 +18,7 @@ nx g rm <name>
 
 
 ```
-NAME=api && nx g @obiente-lab/nx-go:application $NAME --directory app/$NAME
+NAME=api && nx g @obiente-lab/nx-go:application $NAME --directory apps/$NAME
 
 To remove:
 nx g rm <name>
