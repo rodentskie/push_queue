@@ -38,6 +38,11 @@ lint
 nx lint <name>
 ```
 
+tidy
+```bash
+nx tidy <name>
+```
+
 **For Go Application**
 serve
 ```bash
@@ -57,6 +62,11 @@ nx test <name>
 build
 ```bash
 nx build <name>
+```
+
+tidy
+```bash
+nx tidy <name>
 ```
 
 ### Prerequisites
