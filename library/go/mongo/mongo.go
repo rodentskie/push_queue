@@ -1,6 +1,13 @@
 package mongo
 
-func Mongo(name string) string {
-	result := "Mongo " + name
-	return result
+type DatabaseInfo struct {
+	Uri      string
+	Database string
+}
+
+func InitDbConnection(uri string, db string) DatabaseInfo {
+	return DatabaseInfo{
+		Uri:      uri,
+		Database: db,
+	}
 }

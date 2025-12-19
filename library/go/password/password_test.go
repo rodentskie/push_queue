@@ -4,9 +4,16 @@ import (
 	"testing"
 )
 
-func TestPassword(t *testing.T) {
-	result := Password("works")
-	if result != "Password works" {
-		t.Error("Expected Password to append 'works'")
+func TestHashAndVerifyPassword(t *testing.T) {
+	password := "mySecret123"
+	hash, err := HashPassword(password)
+	if err != nil {
+		t.Fatalf("HashPassword failed: %v", err)
+	}
+	if !VerifyPassword(hash, password) {
+		t.Error("VerifyPassword should return true for correct password")
+	}
+	if VerifyPassword(hash, "wrongPassword") {
+		t.Error("VerifyPassword should return false for incorrect password")
 	}
 }
