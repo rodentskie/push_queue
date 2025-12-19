@@ -2,5 +2,19 @@ go 1.25
 
 use (
 	./apps/api
+	./library/go/constant
+	./library/go/converter
+	./library/go/currentLine
+	./library/go/cursor
 	./library/go/env
+	./library/go/error
+	./library/go/generateId
+	./library/go/jwt
+	./library/go/logger
+	./library/go/models
+	./library/go/mongo
+	./library/go/password
+	./library/go/redis
+	./library/go/typings
+	./library/go/xlsxReader
 )
