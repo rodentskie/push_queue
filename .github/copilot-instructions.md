@@ -128,3 +128,7 @@ go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.3.0
 - `nx.json` - Nx configuration with `@obiente-lab/nx-go` plugin
 - `project.json` - Per-project Nx target definitions
 - `pnpm-workspace.yaml` - pnpm workspace config for Node tooling
+
+## Commenting on files
+- Make it brief and relevant to the code changes.
+- Do not bloat the comments with unnecessary details.
