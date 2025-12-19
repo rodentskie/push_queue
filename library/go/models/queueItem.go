@@ -2,7 +2,7 @@ package models
 
 type QueueItem struct {
 	ID          []byte `json:"id" bson:"id"`
-	TeamId      []byte `json:"teamId" bson:"teamId"`
+	TeamId      []byte `json:"teamId" bson:"teamId"` // Team handles this queue item (Team -> Department)
 	Name        string `json:"name" bson:"name"`
 	Description string `json:"description" bson:"description"`
 	Status      int    `json:"status" bson:"status"`
