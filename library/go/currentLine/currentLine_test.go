@@ -2,11 +2,12 @@ package currentline
 
 import (
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestCurrentLine(t *testing.T) {
-	result := CurrentLine("works")
-	if result != "CurrentLine works" {
-		t.Error("Expected CurrentLine to append 'works'")
-	}
+	line := CurrentLine()
+
+	assert.Equal(t, line, 10)
 }

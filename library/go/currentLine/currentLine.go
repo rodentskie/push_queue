@@ -1,6 +1,8 @@
 package currentline
 
-func CurrentLine(name string) string {
-	result := "CurrentLine " + name
-	return result
+import "runtime"
+
+func CurrentLine() int {
+	_, _, line, _ := runtime.Caller(1)
+	return line
 }
